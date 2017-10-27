@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sebanes.sebanes_labexer2.MainActivity2">
+
+    <Button
+        android:id="@+id/btn_loadPref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:text="Shared Preferences"
+        android:onClick="loadPref"/>
+
+    <Button
+        android:id="@+id/btn_storage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn_loadPref"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:text="Internal Storage"
+        android:onClick="loadIntern"/>
+
+    <TextView
+        android:id="@+id/tv_results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="30dp"
+        />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="370dp"
+        android:layout_marginLeft="50dp"
+        android:text="Back"
+        android:onClick="back"/>
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn_back"
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="100dp"
+        android:text="Clear"
+        android:onClick="clear"/>
+
+</RelativeLayout>
